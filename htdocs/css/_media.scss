@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .share-find {
+        img {
+            width: 10rem;
+            @include d-flex-center;
+            margin: auto;
+        }
+        
+    }
+}
+

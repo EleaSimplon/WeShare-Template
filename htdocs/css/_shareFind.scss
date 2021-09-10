@@ -1,0 +1,14 @@
+// ********** SECTION 3 SHARE OR FIND **********
+
+@import 'mixin';
+
+.share-find {
+    margin-top: 5rem !important;
+    img {
+        width: 30rem;
+        @include d-flex-center;
+        margin: auto;
+    }
+    
+}
+

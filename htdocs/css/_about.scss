@@ -1,0 +1,46 @@
+@import 'mixin';
+
+.about {
+    background-color: rgb(222, 138, 135);
+
+    .finger-print {
+        width: 25rem;
+    }
+    .about-who {
+       text-align: center;
+       margin-top: 1rem;
+       p {
+           font-size: 1.5em;
+       }
+    }
+}
+
+.about-share {
+    background-color: cadetblue;
+
+    .rate {
+        width: 15rem;
+    }
+    .share-what {
+        text-align: center;
+        margin-top: 1rem;
+        p {
+            font-size: 1.5em;
+        }
+    }
+}
+
+.about-find {
+    background-color: rgb(95, 107, 160);
+
+    .world {
+        width: 15rem;
+    }
+    .find-what {
+        text-align: center;
+        margin-top: 1rem;
+        p {
+            font-size: 1.5em;
+        }
+    }
+}
