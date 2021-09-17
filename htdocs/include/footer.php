@@ -16,15 +16,11 @@
             var simplemde = new SimpleMDE({ element: document.getElementById("description") });
         </script>
 
-        <!-- ***** STAR RATING SVG ***** -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-        <script src="jquery.star-rating-svg.js"></script>
+        <!-- ***** STAR RATING ***** -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
         <!----- ***** JS SCRIPT *****------>
-        <script src="../js/gsap/app.js"></script>
+        <script src="/js/rating.js"></script>
 
-<?php
-
-    include 'include/footer.php';
-
-?>
+    </body>
+</html>

@@ -21,6 +21,7 @@
     
     <!-- ********* FONT AWESOME LINK ********* -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
     <!----- ***** URL ICON LINK *****------>
     <link rel="icon" href="/images/url-logo.png"/>
@@ -36,11 +37,11 @@
 
     <nav class="white">
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo red-text">Logo</a>   
-            <ul class="hide-on-med-and-down right">                               
-                <li><a href="sass.html" class="red-text">Sass</a></li>
-                <li><a href="badges.html" class="red-text">Components</a></li>
-                <li><a href="collapsible.html" class="red-text">JavaScript</a></li>
+            <a href="/" class="brand-logo red-text">We Share</a>   
+            <ul class="hide-on-med-and-down right">
+                <li><a href="/pages/about.php" class="red-text">About</a></li>
+                <li><a href="/pages/share.php" class="red-text">Share</a></li>
+                <li><a href="/pages/find.php" class="red-text">Find</a></li>
                 
                 <li>
                     <a class="btn-floating btn-medium waves-effect waves-light red"><i class="material-icons">account_circle</i></a>

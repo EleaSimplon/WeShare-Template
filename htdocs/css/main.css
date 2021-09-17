@@ -267,8 +267,30 @@
   justify-content: center;
 }
 
+.header-section .parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9);
+}
+.header-section .parallax-container .section {
+  width: 100%;
+}
+.header-section .parallax img {
+  width: 100%;
+}
+@media only screen and (max-width: 992px) {
+  .header-section .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  .header-section #index-banner .section {
+    top: 10%;
+  }
+}
+
 .about {
-  background-color: #de8a87;
+  background-color: rgba(222, 138, 135, 0.486);
 }
 .about .finger-print {
   width: 25rem;
@@ -280,9 +302,12 @@
 .about .about-who p {
   font-size: 1.5em;
 }
+.about .row {
+  margin-bottom: 0;
+}
 
 .about-share {
-  background-color: cadetblue;
+  background-color: rgba(135, 222, 186, 0.486);
 }
 .about-share .rate {
   width: 15rem;
@@ -296,7 +321,7 @@
 }
 
 .about-find {
-  background-color: #5f6ba0;
+  background-color: rgba(95, 107, 160, 0.411);
 }
 .about-find .world {
   width: 15rem;
@@ -308,16 +333,49 @@
 .about-find .find-what p {
   font-size: 1.5em;
 }
+.about-find .row {
+  margin-bottom: 0;
+}
 
-.share-container {
+.about-share .row {
+  margin-bottom: 0;
+}
+
+.share-page .share-container {
   margin-top: 5rem;
 }
-.share-container h5 {
+.share-page .share-container h5 {
   padding: 2rem;
+  text-align: center;
 }
-
-body {
-  background-color: #fde3ff;
+.share-page .share-container p .range-field {
+  margin: auto;
+  text-align: center;
+}
+.share-page .share-container .switch-choice {
+  display: flex;
+  justify-content: center;
+}
+.share-page .parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9);
+}
+.share-page .parallax-container .section {
+  width: 100%;
+}
+.share-page .parallax img {
+  width: 100%;
+}
+@media only screen and (max-width: 992px) {
+  .share-page .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  .share-page #index-banner .section {
+    top: 10%;
+  }
 }
 
 /********** INDEX PAGE **********/
@@ -339,6 +397,9 @@ body {
   .top-rated .carousel .carousel-cell {
     width: 80%;
   }
+}
+body {
+  background-color: #fde3ff;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,7 +1,37 @@
 @import 'mixin';
 
+.header-section {
+    
+    .parallax-container {
+        min-height: 380px;
+        line-height: 0;
+        height: auto;
+        color: rgba(255,255,255,.9);
+    
+        .section {
+            width: 100%;
+        }
+    }
+    
+    .parallax {
+        img {
+            width: 100%;
+        }
+    }
+    
+    @media only screen and (max-width : 992px) {
+        .parallax-container .section {
+            position: absolute;
+            top: 40%;
+        }
+        #index-banner .section {
+            top: 10%;
+        }
+    }
+}
+
 .about {
-    background-color: rgb(222, 138, 135);
+    background-color: rgba(222, 138, 135, 0.486);
 
     .finger-print {
         width: 25rem;
@@ -13,10 +43,13 @@
            font-size: 1.5em;
        }
     }
+    .row {
+        margin-bottom: 0;
+    }
 }
 
 .about-share {
-    background-color: cadetblue;
+    background-color: rgba(135, 222, 186, 0.486);
 
     .rate {
         width: 15rem;
@@ -31,7 +64,7 @@
 }
 
 .about-find {
-    background-color: rgb(95, 107, 160);
+    background-color: rgba(95, 107, 160, 0.411);
 
     .world {
         width: 15rem;
@@ -42,5 +75,15 @@
         p {
             font-size: 1.5em;
         }
+    }
+
+    .row {
+        margin-bottom: 0;
+    }
+}
+
+.about-share {
+    .row {
+        margin-bottom: 0;
     }
 }

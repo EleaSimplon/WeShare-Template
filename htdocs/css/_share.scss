@@ -1,8 +1,52 @@
+@import 'mixin';
 
-.share-container {
-    margin-top: 5rem;
+.share-page {
 
-    h5 {
-        padding: 2rem;
+    .share-container {
+        margin-top: 5rem;
+
+        h5 {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        p .range-field {
+            margin: auto;
+            text-align: center;
+        }
+
+        .switch-choice {
+            @include d-flex-center;
+        }
+
     }
+
+    .parallax-container {
+        min-height: 380px;
+        line-height: 0;
+        height: auto;
+        color: rgba(255,255,255,.9);
+
+        .section {
+            width: 100%;
+        }
+    }
+
+    .parallax {
+        img {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width : 992px) {
+        .parallax-container .section {
+            position: absolute;
+            top: 40%;
+        }
+        #index-banner .section {
+            top: 10%;
+        }
+    }
+    
+
 }
