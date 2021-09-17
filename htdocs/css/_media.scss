@@ -1,7 +1,13 @@
+@import 'mixin';
+
+
+/********** INDEX PAGE **********/
+/******* SECTION SHARE & FIND *******/
+
 @media (max-width: 768px) {
     .share-find {
         img {
-            width: 10rem;
+            width: 20rem; 
             @include d-flex-center;
             margin: auto;
         }
@@ -9,3 +15,16 @@
     }
 }
 
+// ********** SECTION TOP RATED **********
+
+@media (max-width: 1099px) {
+    .top-rated .carousel .carousel-cell {
+        width: 40%;
+    }
+}
+
+@media (max-width: 690px) {
+    .top-rated .carousel .carousel-cell {
+        width: 80%;
+    }
+}

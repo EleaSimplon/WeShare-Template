@@ -6,154 +6,79 @@ include 'include/header.php';
 
 <!-- ********** SECTION 1 HEADER IMG PARALLAX EFFECT  **********-->
 <section class="header-section">
+
     <div class="header-img">
         <h1><span>WE SHARE</span><br>Experiences of travelling</h1>
 
         <div class="mouse">
             <span></span>
         </div>
-    </div>
+    </div> 
+
 </section>
 
 <!-- ********** SECTION 2 TOP RATED PLACES **********-->
-    <!-- TO DO : -->
-    <!-- BOUCLE MES CARDS API TOP RATED TRIPADVISOR -->
 
 <section class="top-rated pt-5 pb-5">
-    <h1>Top rated :</h1>
-    <div class="container">
-        <div id="sales" class="row">
-            <div class="col-6">
+
+    <!-- **** ANIMATION ****-->
+    <div class="top-rated-animation">
+        <div class="circle">
+            <div class="logo"><img src="/images/badge.png" alt="badge"></div>
+            <div class="text">
+            <svg x="0" y="0" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+            <defs>
+                <path id="circlePath"
+                d="
+                M 150, 150
+                m -120, 0
+                a 120,120 0 0,1 240,0
+                a 120,120 0 0,1 -240,0
+                "
+                />
+            </defs>
+                <g>
+                <text>
+                <textPath xlink:href="#circlePath">
+                    TOP RATED         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BEST OF THE BEST PLACES !</textPath>
+                </text>
+                </g>
+            </svg>
             </div>
-            <div class="col-6 text-right">
-                <a class="btn btn-light mb-3 mr-1" href="#indicators" role="button" data-slide="prev">
-                    <i class="fas fa-chevron-left"></i>
-                </a>
-                <a class="btn btn-light mb-3 " href="#indicators" role="button" data-slide="next">
-                    <i class="fas fa-chevron-right"></i>
-                </a>
-            </div>
-            <div class="col-12">
-                <div id="indicators" class="carousel slide" data-ride="carousel">
+        </div>
+    </div>
 
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
+    <!-- **** CAROUSEL ****-->
+    <div class="carousel" data-flickity='{ "groupCells": true }'>
 
-                                <div class="col-md-4 mb-3">
-                                    <div class="card">
-                                        <img class="img-fluid" alt="100%x280" src="/images/view.jpg">
-                                        <div class="card-body">
-                                            <h3 class="card-title">NAME OF DESTINATION</h3>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                            <div class="top-rating-stars">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-half"></i>
-                                            </div>
-                                        </div>
+    <?php for ($i=0; $i < 9; $i++) { ?> 
 
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <div class="card">
-                                        <img class="img-fluid" alt="100%x280" src="/images/view.jpg">
-                                        <div class="card-body">
-                                            <h3 class="card-title">NAME OF DESTINATION</h3>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                            <div class="top-rating-stars">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <div class="card">
-                                        <img class="img-fluid" alt="" src="/images/view.jpg">
-                                        <div class="card-body">
-                                            <h3 class="card-title">NAME OF DESTINATION</h3>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                            <div class="top-rating-stars">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
+        <div class="carousel-cell">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/1.jpg">
                         </div>
-                        <div class="carousel-item">
-                            <div class="row">
-
-                                <div class="col-md-4 mb-3">
-                                    <div class="card">
-                                        <img class="img-fluid" alt="100%x280" src="/images/view.jpg">
-                                        <div class="card-body">
-                                            <h3 class="card-title">NAME OF DESTINATION</h3>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                            <div class="top-rating-stars">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star"></i>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <div class="card">
-                                        <img class="img-fluid" alt="100%x280" src="/images/view.jpg">
-                                        <div class="card-body">
-                                            <h3 class="card-title">NAME OF DESTINATION</h3>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                            <div class="top-rating-stars">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star"></i>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <div class="card">
-                                        <img class="img-fluid" alt="100%x280" src="/images/view.jpg">
-                                        <div class="card-body">
-                                            <h3 class="card-title">NAME OF DESTINATION</h3>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                            <div class="top-rating-stars">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star"></i>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
+                        <div class="card-content">
+                            <h5>TITLE</h5>
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-rating">
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star_half</i>
+                            <i class="material-icons">star_border</i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    <?php    } ?>
     </div>
+
 </section>
 
 <!-- ********** SECTION 3 SHARE OR FIND **********-->
@@ -161,13 +86,13 @@ include 'include/header.php';
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 share">
+            <div class="col s12 m6 6 share">
                 <a href="/pages/share.php">
                     <img src="/images/share.png">
                 </a>
             </div>
-            <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 find">
-                <a href="/pages/find.php">
+            <div class="col s12 m6 6 find">
+                <a href="/pages/find-food.php">
                     <img src="/images/search.png">
                 </a>
             </div>
